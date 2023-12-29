@@ -21,6 +21,7 @@ h3 {
 
 body {
   font-size: 18px;
+  background-color: var(--background);
 }
 
 a {
@@ -35,18 +36,13 @@ a {
   color: var(--text);
 }
 
-.full-bg {
-  height: 100vh;
-  width: 100%;
-  background-color: var(--background);
-}
-
 .navbar {
   width: 100%;
   height: 12vh;
   display: flex;
   padding: 30px 50px;
   align-items: center;
+  background: var(--background);
 }
 
 .divider {
@@ -114,6 +110,46 @@ a {
   background: var(--accent);
 }
 
+/* Projects Page */
+.projects-container {
+  gap: 15px;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project {
+  width: 350px;
+  padding: 5px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  background: var(--background);
+  transition: all 0.2s ease-in;
+}
+
+.project-image {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.project-image > img {
+  width: 100%;
+  height: auto;
+}
+
+.project-link {
+  color: var(--primary);
+}
+
+.project:hover {
+  box-shadow: -5px 5px 0px 1px var(--accent);
+}
+
 /* Responsive Stuff here */
 @media screen and (max-width: 950px) {
   .hero {
@@ -155,5 +191,9 @@ a {
   .intro {
     padding: 0 10px;
     width: 100vw;
+  }
+
+  .projects-container {
+    justify-content: center;
   }
 }
