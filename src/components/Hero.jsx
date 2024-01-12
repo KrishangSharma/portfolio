@@ -2,12 +2,12 @@ import PFP from "../../assets/ProfilePicture.png";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-evenly h-full w-full">
+    <div className="flex flex-col items-start justify-evenly h-full w-full md:flex-row md:items-center ">
       {/* Image */}
-      <aside className="img-container">
+      <aside className="img-container mx-auto ">
         <img src={PFP} alt="Krishang Sharma" />
       </aside>
-      <aside className="w-1/2 flex flex-col">
+      <aside className="w-full p-4 flex flex-col md:w-1/2 md:p-0 ">
         <h1>
           <span className="text-primary">About </span>Me
         </h1>

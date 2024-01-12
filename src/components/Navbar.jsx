@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="w-100 h-20 p-5 bg-elevation text-white flex items-center justify-between">
-      <div className="flex items-center">
+    <nav className="w-100 h-22 p-5 bg-elevation text-white flex items-center justify-between md:h-20">
+      <div className="flex flex-col items-center justify-center w-full gap-1 md:flex-row md:w-auto ">
         {/* Logo */}
         <h2>
           <Link to="/">
@@ -13,10 +13,10 @@ const Navbar = () => {
         </h2>
 
         {/* Divider */}
-        <hr className="divider mx-5 bg-white" />
+        <hr className="hidden divider mx-5 bg-white md:block " />
 
         {/* Nav Links */}
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-10 text-s ">
           <Link
             to="/projects"
             className="hover:text-accent transition duration-200 easin-in-out"
@@ -37,7 +37,7 @@ const Navbar = () => {
       <div>
         <Link
           to="mailto:https://krishang.sharma.17704@gmail.com"
-          className="bg-primary border border-transparent rounded-md text-white px-5 py-2"
+          className="bg-primary border border-transparent rounded-md text-white px-5 py-2 hidden md:block"
         >
           Contact Me
         </Link>

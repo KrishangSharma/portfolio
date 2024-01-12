@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 
 const TimelineItem = ({ date, title, stack }) => {
   return (
-    <li className="ms-4">
+    <li className="ms-4 ">
       <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border-accent border-2 "></div>
       <time className="mb-1 text-sm leading-none text-gray">{date}</time>
-      <h2 className="text-primary">{title}</h2>
+      <h2 className="text-primary my-2 ">{title}</h2>
       <p className="text-white">
         <b>Tech Stack: </b>
         {stack}

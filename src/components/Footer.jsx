@@ -11,8 +11,8 @@ import {
 
 const Footer = () => {
   return (
-    <div className="mt-auto w-100 bg-elevation  ">
-      <footer className="w-5/6 mx-auto py-5  bg-elevation flex gap-10 items-center justify-between">
+    <div className="mt-auto w-100 bg-elevation">
+      <footer className="w-full py-5 px-2 bg-elevation flex flex-col gap-10 items-start md:w-full md:flex-row md:justify-evenly md:items-center lg:w-5/6 lg:mx-auto lg:px-0 lg:flex-row lg:justify-between">
         {/* Personal Info */}
         <aside className="flex flex-col gap-3">
           <h2>Krishang Sharma</h2>
@@ -27,7 +27,7 @@ const Footer = () => {
           </p>
         </aside>
         {/* Contact Links */}
-        <aside className="flex gap-20 items-start ">
+        <aside className="flex flex-col gap-10 items-start lg:flex-row">
           {/* Socials */}
           <div className="flex flex-col gap-4">
             <h3>Socials</h3>
@@ -37,7 +37,8 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-sm"
             >
-              <GitHub className="text-accent" /> Github/KrishangSharma
+              <GitHub className="text-accent" />{" "}
+              <span className="underline">Github/KrishangSharma</span>
             </a>
 
             <a
@@ -46,14 +47,16 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-sm"
             >
-              <Instagram className="text-accent" /> Instagram/krishang.sharmaa
+              <Instagram className="text-accent" />{" "}
+              <span className="underline">Instagram/krishang.sharmaa</span>
             </a>
           </div>
           {/* Contact */}
           <div className="flex flex-col gap-4">
             <h3>Contact Me</h3>
             <a href="mailto:krishang.sharma.17704@gmail.com">
-              <Mail className="text-accent" /> Mail Me
+              <Mail className="text-accent" />{" "}
+              <span className="underline">Mail Me</span>
             </a>
             <a
               href="https://linkedin.com/in/krishangsharma"
@@ -61,7 +64,8 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-sm"
             >
-              <LinkedIn className="text-accent" /> Connect with me
+              <LinkedIn className="text-accent" />{" "}
+              <span className="underline">Connect with me</span>
             </a>
           </div>
         </aside>

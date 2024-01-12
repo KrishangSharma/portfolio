@@ -5,7 +5,7 @@ import { Home } from "./pages/exports";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-hidden ">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
