@@ -1,15 +1,15 @@
-// Components Import
-import { Link } from "react-router-dom";
+// Packages Import
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="w-100 h-22 p-5 bg-elevation text-white flex items-center justify-between md:h-20">
       <div className="flex flex-col items-center justify-center w-full gap-1 md:flex-row md:w-auto ">
         {/* Logo */}
-        <h2>
-          <Link to="/">
+        <h2 className="text-2xl font-semibold">
+          <NavLink to="/">
             <span className="text-primary">Krishang </span>Sharma
-          </Link>
+          </NavLink>
         </h2>
 
         {/* Divider */}
@@ -17,30 +17,30 @@ const Navbar = () => {
 
         {/* Nav Links */}
         <div className="flex items-center gap-10 text-s ">
-          <Link
+          <NavLink
             to="/projects"
-            className="hover:text-accent transition duration-200 easin-in-out"
+            className="hover:text-accent transition duration-200 ease-in-out"
           >
             {" "}
             Projects{" "}
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/blog"
-            className=" hover:text-accent transition duration-200 easin-in-out"
+            className=" hover:text-accent transition duration-200 ease-in-out"
           >
             {" "}
             Blog{" "}
-          </Link>
+          </NavLink>
         </div>
       </div>
       {/* Mail Butotn */}
       <div>
-        <Link
+        <NavLink
           to="mailto:https://krishang.sharma.17704@gmail.com"
           className="bg-primary border border-transparent rounded-md text-white px-5 py-2 hidden md:block"
         >
           Contact Me
-        </Link>
+        </NavLink>
       </div>
     </nav>
   );

@@ -13,7 +13,7 @@ const Timeline = () => {
 
   return (
     <div className="w-5/6 mx-auto mb-20 flex flex-col gap-10">
-      <h1>Experience Timeline</h1>
+      <h1 className="text-4xl font-bold">Experience Timeline</h1>
       {/* Timeline */}
 
       <ol className="relative border-s-2 border-accent flex flex-col gap-10 pb-5 ">
