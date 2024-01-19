@@ -14,11 +14,14 @@ const BlogCard = ({ title, desc, dateAdded, id }) => {
 
   return (
     <div className="blog-card">
-      <div className="w-full flex items-center justify-between">
-        <Link to={`blog/${id}`} className="text-2xl font-semibold text-accent">
+      <div className="w-full flex items-start justify-between">
+        <Link
+          to={`/blog/${id}`}
+          className="md:w-5/6 text-2xl font-semibold text-accent "
+        >
           {title}
         </Link>
-        <span className="text-gray">{formattedDate}</span>
+        <span className="text-gray md:w-1/6 text-right ">{formattedDate}</span>
       </div>
       <p>{desc}</p>
     </div>
@@ -34,5 +37,5 @@ BlogCard.propTypes = {
   desc: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   images: PropTypes.array.isRequired,
-  dateAdded: PropTypes.instanceOf(Date).isRequired,
+  dateAdded: PropTypes.string.isRequired,
 };

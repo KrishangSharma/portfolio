@@ -25,7 +25,7 @@ const Navbar = () => {
             Projects{" "}
           </NavLink>
           <NavLink
-            to="/blog"
+            to="/blogs"
             className=" hover:text-accent transition duration-200 ease-in-out"
           >
             {" "}

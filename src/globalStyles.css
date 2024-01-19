@@ -36,22 +36,22 @@ body {
   transform: scale(1.25);
 }
 
-ol,
-ul {
+.blog-container ol,
+.blog-container ul {
   padding: 10px 15px;
   margin: 5px 10px;
 }
 
-ol li,
-ul li {
+.blog-container ol li,
+.blog-container ul li {
   padding: 5px;
 }
 
-ol {
+.blog-container ol {
   list-style: number;
 }
 
-ul {
+.blog-container ul {
   list-style: disc;
 }
 
