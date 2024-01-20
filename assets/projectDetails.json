@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Blog Application",
+    "stack": "MongoDB, ExpressJS, NodeJS, React, React-Quill, Cloudinary and Tailwind CSS",
+    "repo": "https://github.com/KrishangSharma/blog-server",
+    "live": "https://krishangsharma.vercel.app/blogs"
+  }
+]
