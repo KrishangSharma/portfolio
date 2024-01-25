@@ -27,7 +27,7 @@ const BlogContainer = () => {
     }
 
     getBlogs();
-  }, []);
+  }, [serverURL, secret]);
 
   return (
     <div className="w-full my-10">
@@ -58,17 +58,18 @@ const BlogContainer = () => {
             </div>
           </div>
         ) : (
-          blogs.map((blog, index) => (
-            <BlogCard
-              key={index}
-              title={blog.title}
-              id={blog._id}
-              dateAdded={blog.createdAt}
-              desc={blog.description}
-              content={blog.content}
-              images={blog.images}
-            />
-          ))
+          blogs
+            .slice()
+            .reverse()
+            .map((blog, index) => (
+              <BlogCard
+                key={index}
+                title={blog.title}
+                id={blog._id}
+                dateAdded={blog.createdAt}
+                desc={blog.description}
+              />
+            ))
         )}
       </div>
     </div>

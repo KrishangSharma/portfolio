@@ -17,13 +17,13 @@ const BlogCard = ({ title, desc, dateAdded, id }) => {
       <div className="w-full flex flex-col items-start justify-between md:flex-row">
         <Link
           to={`/blog/${id}`}
-          className="md:w-5/6 text-2xl font-semibold text-accent "
+          className="md:w-5/6 text-xl font-semibold hover:text-accent transition ease-in-out "
         >
           {title}
         </Link>
         <span className="text-gray md:w-1/6 text-right ">{formattedDate}</span>
       </div>
-      <p>{desc}</p>
+      <p className="text-sm">{desc}</p>
     </div>
   );
 };
@@ -35,7 +35,5 @@ BlogCard.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  images: PropTypes.array.isRequired,
   dateAdded: PropTypes.string.isRequired,
 };

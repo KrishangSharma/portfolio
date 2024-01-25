@@ -79,6 +79,10 @@ blockquote {
   font-size: 1.4rem;
 }
 
+.blog-container a {
+  text-decoration: underline;
+}
+
 .blog-card {
   gap: 15px;
   width: 100%;
