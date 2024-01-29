@@ -14,7 +14,7 @@ const BlogCard = ({ title, desc, dateAdded, id }) => {
 
   return (
     <div className="blog-card">
-      <div className="w-full flex flex-col items-start justify-between md:flex-row">
+      <div className="w-full flex flex-col items-start justify-between gap-1 md:flex-row">
         <Link
           to={`/blog/${id}`}
           className="md:w-5/6 text-xl font-semibold hover:text-accent transition ease-in-out "

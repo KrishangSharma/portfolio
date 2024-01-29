@@ -31,6 +31,16 @@ const Blog = () => {
     getBlogById();
   }, [id, serverURL, secret]);
 
+  // Function to replace {IMG} placeholders with <img> tags
+  function replaceImgPlaceholders(content, images) {
+    return images.reduce((updatedContent, imgUrl, index) => {
+      const imgTag = `<img src="${imgUrl}" class="my-5" alt="Image ${
+        index + 1
+      }">`;
+      return updatedContent.replace(`{IMG}`, imgTag);
+    }, content);
+  }
+
   const replacedContent = replaceImgPlaceholders(blog.content, blog.images);
 
   const timestamp = blog.createdAt;
@@ -83,15 +93,5 @@ const Blog = () => {
     </div>
   );
 };
-
-// Function to replace {IMG} placeholders with <img> tags
-function replaceImgPlaceholders(content, images) {
-  return images.reduce((updatedContent, imgUrl, index) => {
-    const imgTag = `<img src="${imgUrl}" class="my-5" alt="Image ${
-      index + 1
-    }">`;
-    return updatedContent.replace(`{IMG}`, imgTag);
-  }, content);
-}
 
 export default Blog;
