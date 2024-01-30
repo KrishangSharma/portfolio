@@ -1,8 +1,8 @@
 // Components Import
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Pages Import
-import { Home, Projects, BlogContainer } from "./pages/exports";
-import { Navbar, Footer, Blog } from "./components/exports";
+import { Home, Projects } from "./pages/exports";
+import { Navbar, Footer } from "./components/exports";
 
 function App() {
   return (
@@ -12,8 +12,6 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/projects" exact element={<Projects />} />
-          <Route path="/blogs" exact element={<BlogContainer />} />
-          <Route path="/blog/:id" exact element={<Blog />} />
         </Routes>
         <Footer />
       </Router>

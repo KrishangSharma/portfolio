@@ -25,7 +25,7 @@ const Navbar = () => {
             Projects{" "}
           </NavLink>
           <NavLink
-            to="/blogs"
+            to="https://krishangsharma-blogs.vercel.app/"
             className=" hover:text-accent transition duration-200 ease-in-out"
           >
             {" "}
