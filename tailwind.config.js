@@ -7,7 +7,7 @@ export default {
         transparent: "transparent",
         black: "#010005",
         white: "#F5F1FE",
-        gray: "#404040",
+        gray: "#828282",
         accent: "#AF0808",
         primary: "#570BDA",
         elevation: "#131313",

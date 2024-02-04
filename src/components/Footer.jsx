@@ -35,6 +35,7 @@ const Footer = () => {
               href="https://github.com/KrishangSharma"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-accent"
             >
               <GitHub className="text-accent" />{" "}
               <span className="underline">Github/KrishangSharma</span>
@@ -44,6 +45,7 @@ const Footer = () => {
               href="https://instagram.com/krishang.sharmaa"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-accent"
             >
               <Instagram className="text-accent" />{" "}
               <span className="underline">Instagram/krishang.sharmaa</span>
@@ -56,6 +58,7 @@ const Footer = () => {
               href="https://forms.gle/LAxyAA9J7MDfboA28"
               target="_blank"
               rel="noreferrer noopener"
+              className="hover:text-accent"
             >
               <Mail className="text-accent" />{" "}
               <span className="underline">Write to Me</span>
@@ -64,6 +67,7 @@ const Footer = () => {
               href="https://linkedin.com/in/krishangsharma"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-accent"
             >
               <LinkedIn className="text-accent" />{" "}
               <span className="underline">Connect with Me</span>

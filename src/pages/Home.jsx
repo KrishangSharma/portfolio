@@ -1,5 +1,5 @@
 // Components Import
-import { Hero, Timeline } from "../components/exports";
+import { Hero, Timeline, Languages } from "../components/exports";
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
         <Hero />
       </div>
       <Timeline />
+      <Languages />
     </>
   );
 };

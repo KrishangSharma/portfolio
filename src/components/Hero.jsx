@@ -1,25 +1,21 @@
+import Typewriter from "./Typewriter";
 import PFP from "../../assets/ProfilePicture.png";
 
 const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-evenly h-full w-full md:flex-row md:items-center ">
-      {/* Image */}
-      <aside className="img-container">
-        <img src={PFP} alt="Krishang Sharma" />
-      </aside>
-      <aside className="w-full p-4 flex flex-col md:w-1/2 md:p-0 ">
-        <h1 className="text-4xl font-bold">
-          <span className="text-primary">About </span>Me
-        </h1>
-        <p className="my-5">
-          Hello. My name is Krishang Sharma. I am a <b>Full Stack Developer</b>{" "}
-          and a 2nd Year BCA student at IP University in Delhi, India. I spend
-          my time improving my skills in web development, specifically in the
-          MERN Stack. My technical skills include <b>HTML</b>, <b>CSS</b>,{" "}
-          <b>JS</b>, <b>ReactJS</b>, <b>NodeJS</b>, <b>ExpressJS</b>,{" "}
-          <b>Mongo DB</b>, <b>Tailwind CSS</b>,<b>Material UI</b>, and{" "}
-          <b>GitHub</b> for VCS.
+      <aside className="w-full p-4 flex flex-col md:w-1/2 md:p-0 gap-5">
+        <h2 className="text-2xl sm:text-4xl font-bold">Hi! I am,</h2>
+        {/* <Typewriter /> */}
+
+        {/* Short Introduction */}
+        <p className="text-gray">
+          I&apos;m a <strong>Computer Applications</strong> student based in
+          Delhi, currently exploring <strong>Full Stack development</strong>{" "}
+          with the MERN Stack, I enjoy creating applications that are both
+          visually appealing and functionally stable.
         </p>
+
         <div className="flex gap-4">
           <a
             href="https://github.com/KrishangSharma"
@@ -38,6 +34,10 @@ const Hero = () => {
             LinkedIn
           </a>
         </div>
+      </aside>
+      {/* Image */}
+      <aside className="img-container">
+        <img src={PFP} alt="Krishang Sharma" />
       </aside>
     </div>
   );
