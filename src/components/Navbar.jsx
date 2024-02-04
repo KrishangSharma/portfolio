@@ -24,23 +24,18 @@ const Navbar = () => {
             {" "}
             Projects{" "}
           </NavLink>
-          <NavLink
-            to="https://krishangsharma-blogs.vercel.app/"
-            className=" hover:text-accent transition duration-200 ease-in-out"
-          >
-            {" "}
-            Blog{" "}
-          </NavLink>
         </div>
       </div>
       {/* Mail Butotn */}
       <div>
-        <NavLink
-          to="mailto:https://krishang.sharma.17704@gmail.com"
+        <a
+          href="https://forms.gle/LAxyAA9J7MDfboA28"
+          target="_blank"
+          rel="noreferrer noopener"
           className="bg-primary border border-transparent rounded-md text-white px-5 py-2 hidden md:block"
         >
           Contact Me
-        </NavLink>
+        </a>
       </div>
     </nav>
   );

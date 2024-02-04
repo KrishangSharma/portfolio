@@ -35,7 +35,6 @@ const Footer = () => {
               href="https://github.com/KrishangSharma"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm"
             >
               <GitHub className="text-accent" />{" "}
               <span className="underline">Github/KrishangSharma</span>
@@ -45,7 +44,6 @@ const Footer = () => {
               href="https://instagram.com/krishang.sharmaa"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm"
             >
               <Instagram className="text-accent" />{" "}
               <span className="underline">Instagram/krishang.sharmaa</span>
@@ -54,18 +52,21 @@ const Footer = () => {
           {/* Contact */}
           <div className="flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">Contact Me</h3>
-            <a href="mailto:krishang.sharma.17704@gmail.com">
+            <a
+              href="https://forms.gle/LAxyAA9J7MDfboA28"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Mail className="text-accent" />{" "}
-              <span className="underline">Mail Me</span>
+              <span className="underline">Write to Me</span>
             </a>
             <a
               href="https://linkedin.com/in/krishangsharma"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm"
             >
               <LinkedIn className="text-accent" />{" "}
-              <span className="underline">Connect with me</span>
+              <span className="underline">Connect with Me</span>
             </a>
           </div>
         </aside>
