@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="flex flex-col items-center justify-evenly h-full w-full md:flex-row md:items-center ">
       <aside className="w-full p-4 flex flex-col md:w-1/2 md:p-0 gap-5">
         <h2 className="text-2xl sm:text-4xl font-bold">Hi! I am,</h2>
-        {/* <Typewriter /> */}
+        <Typewriter />
 
         {/* Short Introduction */}
         <p className="text-gray">
