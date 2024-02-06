@@ -27,6 +27,7 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className="hover:text-accent md:inline transition duration-200 ease-in-out"
+          onClick={() => setOpen(false)}
         >
           {" "}
           Projects{" "}
@@ -38,6 +39,7 @@ const Navbar = () => {
           target="_blank"
           rel="noreferrer noopener"
           className="bg-primary border border-transparent rounded-md text-white px-5 py-2 md:ml-auto md:block"
+          onClick={() => setOpen(false)}
         >
           Contact Me
         </a>
