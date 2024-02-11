@@ -1,8 +1,11 @@
 import PropTypes from "prop-types";
 
-const Project = ({ title, stack, repo, live }) => {
+const Project = ({ title, stack, repo, live, img }) => {
   return (
     <div className=" w-full gap-4 md:w-80 md:h-36 md:gap-0 p-2 border-2 border-accent rounded-md bg-black flex flex-col justify-between">
+      <div className="w-full">
+        <img src={img} />
+      </div>
       <h2 className="text-2xl font-semibold">{title}</h2>
       <span className="text-xs">Tech Stack: {stack}</span>
       <div className="w-2/3 md:w-full flex items-center gap-4 ">
@@ -25,4 +28,5 @@ Project.propTypes = {
   stack: PropTypes.string.isRequired,
   repo: PropTypes.string.isRequired,
   live: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
 };
