@@ -18,7 +18,7 @@ const LanguageGrid = () => {
   return (
     <div className="w-5/6 mx-auto mb-20 flex flex-col gap-10">
       <h1 className="text-4xl font-bold">Technologies Known</h1>
-      <div className="w-full flex items-center justify-center gap-5 flex-wrap">
+      <div className="w-full flex items-center justify-evenly gap-5 flex-wrap">
         <Language logo={HTML} name="HTML" />
         <Language logo={CSS} name="CSS" />
         <Language logo={JS} name="Javascript" />
