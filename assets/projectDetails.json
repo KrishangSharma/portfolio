@@ -1,9 +1,16 @@
 [
   {
     "title": "Blog Application",
-    "stack": "MongoDB, ExpressJS, NodeJS, React, React-Quill, Cloudinary and Tailwind CSS",
+    "stack": "MERN Stack with React-Quill, Cloudinary and Tailwind CSS",
     "repo": "https://github.com/KrishangSharma/blog-server",
     "live": "https://krishangsharma-blogs.vercel.app/",
-    "img": "https://github.com/KrishangSharma/portfolio/blob/main/assets/blog-project.png"
+    "img": "assets/blog-project.png"
+  },
+  {
+    "title": "Blog Application",
+    "stack": "MERN Stack with React-Quill, Cloudinary and Tailwind CSS",
+    "repo": "https://github.com/KrishangSharma/blog-server",
+    "live": "https://krishangsharma-blogs.vercel.app/",
+    "img": "assets/blog-project.png"
   }
 ]

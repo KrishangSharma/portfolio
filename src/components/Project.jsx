@@ -1,21 +1,33 @@
 import PropTypes from "prop-types";
 
-const Project = ({ title, stack, repo, live, img }) => {
+const Project = ({ stack, title, repo, live, img }) => {
   return (
-    <div className=" w-full gap-4 md:w-80 md:h-36 md:gap-0 p-2 border-2 border-accent rounded-md bg-black flex flex-col justify-between">
-      <div className="w-full">
-        <img src={img} />
-      </div>
-      <h2 className="text-2xl font-semibold">{title}</h2>
-      <span className="text-xs">Tech Stack: {stack}</span>
-      <div className="w-2/3 md:w-full flex items-center gap-4 ">
-        <a href={repo} target="_blank" rel="noopener noreferrer">
-          <span className="text-sm underline ">Github Repo</span>
-        </a>
-        <a href={live} target="_blank" rel="noopener noreferrer">
-          <span className="text-sm underline">Live Preview</span>
-        </a>
-      </div>
+    <div className="max-w-xl h-32 flex items-start justify-between rounded-md bg-elevation p-2 rounded-sm md:p-0 md:gap-4 border overflow-hidden">
+      <aside className="hidden md:block md:max-w-3/6 h-full">
+        <img src={img} alt="Project Title" className="w-full h-auto" />
+      </aside>
+      <aside className="w-full h-full flex flex-col justify-between">
+        <p className="text-2xl font-bold">{title}</p>
+        <p className="text-sm text-gray">{stack}</p>
+        <div className="flex gap-4">
+          <a
+            href={repo}
+            target="_blank"
+            rel="noopnener noreferrer"
+            className="underline hover:text-accent"
+          >
+            Github
+          </a>
+          <a
+            href={live}
+            target="_blank"
+            rel="noopnener noreferrer"
+            className="underline hover:text-accent"
+          >
+            Live Preview
+          </a>
+        </div>
+      </aside>
     </div>
   );
 };
@@ -24,8 +36,8 @@ export default Project;
 
 // Prop Validations
 Project.propTypes = {
-  title: PropTypes.string.isRequired,
   stack: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   repo: PropTypes.string.isRequired,
   live: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
