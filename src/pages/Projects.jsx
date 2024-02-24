@@ -24,7 +24,6 @@ const Projects = () => {
             stack={project.stack}
             repo={project.repo}
             live={project.live}
-            img={project.img}
             title={project.title}
           />
         ))}

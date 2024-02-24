@@ -1,39 +1,34 @@
-import Language from "./Language";
-import HTML from "../../assets/html.svg";
-import CSS from "../../assets/css.svg";
-import JS from "../../assets/js.svg";
-import ReactJs from "../../assets/reactjs.svg";
-import NodeJs from "../../assets/nodejs.svg";
-import ExpressJs from "../../assets/expressjs.svg";
-import Mui from "../../assets/mui.svg";
-import Vite from "../../assets/vite.svg";
-import Vercel from "../../assets/vercel.svg";
-import Mongo from "../../assets/mongo.svg";
-import Github from "../../assets/github.svg";
-import Git from "../../assets/git.svg";
-import Figma from "../../assets/figma.svg";
-import Tailwind from "../../assets/tailwind.svg";
-
 const LanguageGrid = () => {
   return (
     <div className="w-5/6 mx-auto mb-20 flex flex-col gap-10">
       <h1 className="text-4xl font-bold">Technologies Known</h1>
-      <div className="w-full flex items-center justify-evenly gap-5 flex-wrap">
-        <Language logo={HTML} name="HTML" />
-        <Language logo={CSS} name="CSS" />
-        <Language logo={JS} name="Javascript" />
-        <Language logo={ReactJs} name="React" />
-        <Language logo={NodeJs} name="NodeJs" />
-        <Language logo={ExpressJs} name="Express" />
-        <Language logo={Mongo} name="MongoDB" />
-        <Language logo={Mui} name="MongoDB" />
-        <Language logo={Tailwind} name="Tailwind Css" />
-        <Language logo={Vite} name="Vite" />
-        <Language logo={Vercel} name="Vercel" />
-        <Language logo={Git} name="Git" />
-        <Language logo={Github} name="GitHub" />
-        <Language logo={Figma} name="Figma" />
-      </div>
+      <section className="w-full flex items-start justify-evenly flex-wrap">
+        <div className="w-full md:w-1/3 flex flex-col items-start py-2 gap-2">
+          <h2 className="text-2xl font-semibold">Front End</h2>
+          <div className="flex flex-col gap-1 text-gray">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>React JS</p>
+          </div>
+        </div>
+        <div className="w-full md:w-1/3 flex flex-col items-start py-2 gap-2">
+          <h2 className="text-2xl font-semibold">Back End</h2>
+          <div className="flex flex-col gap-1 text-gray">
+            <p>Node JS</p>
+            <p>Express JS</p>
+            <p>MongoDB</p>
+            <p>Java(beginner)</p>
+          </div>
+        </div>
+        <div className="w-full md:w-1/3 flex flex-col items-start py-2 gap-2">
+          <h2 className="text-2xl font-semibold">Version Control</h2>
+          <div className="flex flex-col gap-1 text-gray">
+            <p>GIT Command Line</p>
+            <p>GitHub</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
