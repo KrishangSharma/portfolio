@@ -6,16 +6,18 @@ import { Navbar, Footer } from "./components/exports";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen body-background">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/projects" exact element={<Projects />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+    <>
+      <div className="flex flex-col min-h-screen body-background">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/projects" exact element={<Projects />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
+    </>
   );
 }
 

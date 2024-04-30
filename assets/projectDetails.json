@@ -4,5 +4,11 @@
     "stack": "MERN Stack with React-Quill, Cloudinary and Tailwind CSS",
     "repo": "https://github.com/KrishangSharma/blog-server",
     "live": "https://krishangsharma-blogs.vercel.app/"
+  },
+  {
+    "title": "TypeScript Application",
+    "stack": "MERN Stack with Typescript and Tailwind CSS",
+    "repo": "https://github.com/KrishangSharma/typescript-mern-app",
+    "live": null
   }
 ]

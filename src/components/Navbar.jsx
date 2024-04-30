@@ -15,11 +15,7 @@ const Navbar = () => {
       </h2>
 
       {/* Nav Links */}
-      <div
-        className={`w-full flex items-center justify-evenly md:w-[calc(100%-14rem)] md:justify-center gap-1 nav-links${
-          open ? "-active" : " "
-        }`}
-      >
+      <div className="w-full flex items-center justify-evenly md:w-[calc(100%-14rem)] md:justify-center gap-1 nav-links">
         {/* Divider */}
         <hr className="hidden divider mx-5 bg-white md:block" />
 

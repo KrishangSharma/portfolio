@@ -2,7 +2,7 @@ const LanguageGrid = () => {
   return (
     <div className="w-5/6 mx-auto mb-20 flex flex-col gap-10">
       <h1 className="text-4xl font-bold">Technologies Known</h1>
-      <section className="w-full flex items-start justify-between flex-wrap">
+      <section className="w-full flex items-start justify-between flex-wrap gap-5">
         <div className="w-full md:w-64 flex flex-col items-start p-2 gap-2 bg-elevation border border-elevation rounded-md ">
           <h2 className="text-2xl font-semibold">Front End</h2>
           <div className="flex flex-col gap-1 text-gray">

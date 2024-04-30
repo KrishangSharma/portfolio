@@ -4,13 +4,13 @@ const Project = ({ stack, title, repo, live }) => {
   return (
     <div className="bg-elevation p-2 rounded-md flex flex-col gap-2 max-w-xs ">
       <h2 className="text-2xl font-semibold ">{title}</h2>
-      <p className="text-sm text-gray">Stack: {stack}</p>
+      <p className="text-sm text-gray">{stack}</p>
       <div className="flex gap-4">
         <a
           href={repo}
           target="_blank"
           rel="noreferrer noopener"
-          className="underline text-gray hover:text-accent"
+          className="underline text-gray hover:text-accent transition "
         >
           Github
         </a>
@@ -18,7 +18,9 @@ const Project = ({ stack, title, repo, live }) => {
           href={live}
           target="_blank"
           rel="noreferrer noopener"
-          className="underline text-gray hover:text-accent"
+          className={` ${
+            live === null ? "hidden" : " "
+          } underline text-gray hover:text-accent transition`}
         >
           Live Preview
         </a>

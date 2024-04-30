@@ -36,8 +36,8 @@ const Hero = () => {
         </div>
       </aside>
       {/* Image */}
-      <aside className="img-container">
-        <img src={PFP} alt="Krishang Sharma" />
+      <aside className="w-64 h-64 rounded-full overflow-hidden">
+        <img src={PFP} alt="Krishang Sharma" className="w-full -mt-11" />
       </aside>
     </div>
   );

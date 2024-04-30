@@ -17,7 +17,7 @@ const Projects = () => {
       <h1 className="text-4xl font-bold">
         <span className="text-primary">Projects</span>
       </h1>
-      <div className="w-full flex flex-col items-center md:flex-row md:justify-between gap-8 md:flex-wrap">
+      <div className="w-full flex flex-col items-center md:flex-row gap-8 md:flex-wrap">
         {projects.map((project, index) => (
           <Project
             key={index}

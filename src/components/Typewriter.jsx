@@ -7,7 +7,7 @@ const Typewriter = () => {
       typeSpeed={70}
       backSpeed={30}
       className="text-3xl sm:text-6xl text-primary font-bold"
-      strings={["Krishang Sharma", "A Full Stack Developer", "And An Athlete"]}
+      strings={["Krishang Sharma", "A Full Stack Developer", "And A Student"]}
     />
   );
 };
