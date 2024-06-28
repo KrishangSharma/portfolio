@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 // Component Imports
 import data from "../../assets/projectDetails.json";
-import { Project } from "../components/exports";
+import { Heading, Project } from "../components/exports";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -13,11 +13,9 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="w-5/6 mx-auto py-16 flex flex-col gap-10 ">
-      <h1 className="text-4xl font-bold">
-        <span className="text-primary">Projects</span>
-      </h1>
-      <div className="w-full flex flex-col items-center md:flex-row gap-8 md:flex-wrap">
+    <div className="w-full md:w-5/6 h-screen sm:mt-28 p-5 mx-auto flex flex-col gap-10 ">
+      <Heading text="Projects" />
+      <div className="w-full flex items-start gap-10 flex-wrap">
         {projects.map((project, index) => (
           <Project
             key={index}

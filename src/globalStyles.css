@@ -6,43 +6,40 @@
 @tailwind utilities;
 
 body {
-  overflow-x: hidden;
   font-size: 16px;
+  color: #ecf0f8;
+  background-color: #050316;
+  background-image: radial-gradient(rgb(22, 14, 75) 1px, transparent 2px);
+  background-size: 50px 50px; /* Size of the grid */
 }
 
-.divider {
-  width: 1px;
-  height: 30px;
-  margin: 0 20px;
-  transform: rotate(180);
+.active-link {
+  color: #c9696b;
 }
 
-.full-screen {
-  height: calc(100vh - 80px);
-}
-
-@media screen and (max-width: 768px) {
-  .nav-links {
-    left: 0;
-    top: 5rem;
-    width: 100%;
-    height: 75px;
-    position: absolute;
-    background: #131313;
-    transform: translateY(-200%);
-    transition: 0.5s ease-in-out;
-    border-top: 1px solid #828282;
+@media screen and (max-width: 640px) {
+  .list {
+    transition: all 0.3s ease-in-out;
+    transform: translate(50%, 50%) scale(0);
   }
 
-  .nav-links-active {
-    left: 0;
-    top: 5rem;
-    width: 100%;
-    height: 75px;
-    position: absolute;
-    background: #131313;
-    transform: translateY(0);
-    transition: 0.5s ease-in-out;
-    border-top: 1px solid #828282;
+  .active {
+    transition: all 0.3s ease-in-out;
+    transform: translate(0, 0) scale(1);
+  }
+
+  .nav-btn.close {
+    cursor: pointer;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-btn.active {
+    cursor: pointer;
+    transform: rotate(0);
+    transition: 0.3s ease-in-out;
+  }
+  .tab {
+    display: none;
   }
 }

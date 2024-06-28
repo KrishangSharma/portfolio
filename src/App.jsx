@@ -7,14 +7,17 @@ import { Navbar, Footer } from "./components/exports";
 function App() {
   return (
     <>
-      <div className="flex flex-col min-h-screen body-background">
+      <div className="w-full h-screen flex flex-col gap-5">
         <Router>
           <Navbar />
-          <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="/projects" exact element={<Projects />} />
-          </Routes>
-          <Footer />
+          {/* Main Container */}
+          <main className="w-full h-full">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+            </Routes>
+            <Footer />
+          </main>
         </Router>
       </div>
     </>

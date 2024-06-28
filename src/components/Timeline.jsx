@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 // Components Import
 import TimelineItem from "./TimelineItem.jsx";
 import data from "../../assets/projects.json";
+import Heading from "./Heading.jsx";
 
 const Timeline = () => {
   const [projectData, setProjectData] = useState([]);
@@ -12,11 +13,11 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="w-5/6 mx-auto mb-20 flex flex-col gap-10">
-      <h1 className="text-4xl font-bold">Experience Timeline</h1>
+    <div className="w-full md:w-5/6 mx-auto mb-20 flex flex-col gap-10 p-5">
+      <Heading text="Projects Timeline" />
       {/* Timeline */}
 
-      <ol className="relative border-s-2 border-accent flex flex-col gap-10 pb-5 ">
+      <ol className="relative border-s-2 border-accent-500 flex flex-col gap-10 pb-4 ">
         {projectData.map((project, index) => (
           <TimelineItem
             key={index}

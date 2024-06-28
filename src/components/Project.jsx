@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 
 const Project = ({ stack, title, repo, live }) => {
   return (
-    <div className="bg-elevation p-2 rounded-md flex flex-col gap-2 max-w-xs ">
-      <h2 className="text-2xl font-semibold ">{title}</h2>
-      <p className="text-sm text-gray">{stack}</p>
+    <div className="bg-text-800 p-5 rounded-md flex flex-col gap-2 max-w-sm ">
+      <h2 className="text-2xl font-semibold text-accent-500 ">{title}</h2>
+      <p className="text-sm text-text-200">{stack}</p>
       <div className="flex gap-4">
         <a
           href={repo}
