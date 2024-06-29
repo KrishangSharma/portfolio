@@ -11,19 +11,22 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-100 border-t border-background-200 ">
+    <div className="w-100 border-t border-background-200 pb-28 sm:pb-0 ">
       <footer className="w-full py-5 px-2 bg-elevation flex flex-col gap-10 items-start md:w-full md:flex-row md:justify-evenly md:items-center lg:w-5/6 lg:mx-auto lg:px-0 lg:flex-row lg:justify-between">
         {/* Personal Info */}
         <aside className="flex flex-col gap-3">
           <h2 className="text-2xl font-semibold">Krishang Sharma</h2>
           <p className="text-sm">
-            <WorkOutlineOutlined fontSize="small" /> Full Stack Developer
+            <WorkOutlineOutlined fontSize="small" className="text-accent-500" />{" "}
+            Full Stack Developer
           </p>
           <p className="text-sm">
-            <LocationOnOutlined fontSize="small" /> Delhi, India
+            <LocationOnOutlined fontSize="small" className="text-accent-500" />{" "}
+            Delhi, India
           </p>
           <p className="text-sm">
-            <SchoolOutlined fontSize="small" /> IPU, Delhi
+            <SchoolOutlined fontSize="small" className="text-accent-500" /> IPU,
+            Delhi
           </p>
         </aside>
         {/* Contact Links */}
@@ -37,7 +40,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-accent"
             >
-              <GitHub className="text-accent" />{" "}
+              <GitHub className="text-accent-500" />{" "}
               <span className="underline">Github/KrishangSharma</span>
             </a>
 
@@ -47,7 +50,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-accent"
             >
-              <Instagram className="text-accent" />{" "}
+              <Instagram className="text-accent-500" />{" "}
               <span className="underline">Instagram/krishang.sharmaa</span>
             </a>
           </div>
@@ -60,7 +63,7 @@ const Footer = () => {
               rel="noreferrer noopener"
               className="hover:text-accent"
             >
-              <Mail className="text-accent" />{" "}
+              <Mail className="text-accent-500" />{" "}
               <span className="underline">Write to Me</span>
             </a>
             <a
@@ -69,7 +72,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-accent"
             >
-              <LinkedIn className="text-accent" />{" "}
+              <LinkedIn className="text-accent-500" />{" "}
               <span className="underline">Connect with Me</span>
             </a>
           </div>
