@@ -11,7 +11,7 @@ const Navbar = () => {
   const Links = [
     { title: "Home", dest: "/", icon: <Home /> },
     { title: "Projects", dest: "/projects", icon: <Layers /> },
-    // { title: "Contact", dest: "/contact", icon: <Phone /> },
+    { title: "Contact", dest: "/contact", icon: <Phone /> },
   ];
 
   const handleClick = (dest) => {

@@ -1,7 +1,7 @@
 // Components Import
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Pages Import
-import { Home, Projects } from "./pages/exports";
+import { Home, Projects, ContactMe } from "./pages/exports";
 import { Navbar, Footer } from "./components/exports";
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<ContactMe />} />
             </Routes>
             <Footer />
           </main>
