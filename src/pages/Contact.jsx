@@ -3,7 +3,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { Heading } from "../components/exports";
 
 function Contact() {
-  const [state, handleSubmit] = useForm("mwpekejl");
+  const [state, handleSubmit] = useForm(import.meta.VITE_FORM_ID);
   // Form States
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
@@ -31,7 +31,7 @@ function Contact() {
     <div className="w-full sm:mt-28 md:w-5/6 md:mx-auto h-screen flex flex-col gap-10 justify-start p-5">
       <Heading text="Contact Me" />
       <form
-        action="https://formspree.io/f/mwpekejl"
+        action={`https://formspree.io/f/${import.meta.VITE_FORM_ID}`}
         method="POST"
         onSubmit={handleSubmission}
         className="w-full lg:w-5/6 lg:mx-auto flex flex-col gap-10"
