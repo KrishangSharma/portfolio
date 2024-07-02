@@ -10,6 +10,8 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
 
+  const formID = import.meta.env.VITE_FORM_ID;
+
   const handleSubmission = (e) => {
     e.preventDefault();
 
@@ -31,7 +33,7 @@ function Contact() {
     <div className="w-full sm:mt-28 md:w-5/6 md:mx-auto h-screen flex flex-col gap-10 justify-start p-5">
       <Heading text="Contact Me" />
       <form
-        action={`https://formspree.io/f/${import.meta.env.VITE_FORM_ID}`}
+        action={`https://formspree.io/f/${formID}`}
         method="POST"
         onSubmit={handleSubmission}
         className="w-full lg:w-5/6 lg:mx-auto flex flex-col gap-10"

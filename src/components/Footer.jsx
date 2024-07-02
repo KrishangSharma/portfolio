@@ -1,4 +1,5 @@
 // Package Imports
+import { Link } from "react-router-dom";
 import {
   Mail,
   GitHub,
@@ -57,15 +58,10 @@ const Footer = () => {
           {/* Contact */}
           <div className="flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">Contact Me</h3>
-            <a
-              href="https://forms.gle/LAxyAA9J7MDfboA28"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="hover:text-accent"
-            >
+            <Link to="/contact" className="hover:text-accent">
               <Mail className="text-accent-500" />{" "}
               <span className="underline">Write to Me</span>
-            </a>
+            </Link>
             <a
               href="https://linkedin.com/in/krishangsharma"
               target="_blank"
