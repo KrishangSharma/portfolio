@@ -13,10 +13,10 @@ const Hero = () => {
         </div>
         <p className="text-lg text-text-200 lg:w-2/3 ">
           Hey there! I&apos;m{" "}
-          <span className="font-bold text-text-50">Krishang Sharma</span>, a
+          <span className="font-bold text-text-50">Karan Sharma</span>, a
           19-year-old from Delhi, currently in my{" "}
           <span className="text-text-50 font-semibold">
-            2nd year of BCA at IPU
+            3nd year of BCA at IPU
           </span>
           . I&apos;m really into web development and programming, and I&apos;ve
           been self-teaching a lot of what I know. <br /> <br /> I&apos;ve got a
