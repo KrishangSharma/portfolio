@@ -1,6 +1,10 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
-import "./globals.css";
+
+import Navbar from "@/components/navbar";
+import { ThemeProvider } from "@/lib/themeContext";
+import BlurGradientBackground from "@/components/blur-gradient-background";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,7 +19,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Krishang Sharma | Portfolio",
   description:
-    "I am a 20 years old Self Taught Full Stack Developer, based in Delhi, India. I am currently pursuing BCA from IP University. Visit my portoflio to know more.",
+    "I am a 20 years old Self Taught Full Stack Developer, based in Delhi, India. I am currently pursuing BCA from IP University. Visit my portfolio to know more.",
 };
 
 export default function RootLayout({
@@ -25,9 +29,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${montserrat.variable} antialiased`}>
-        {children}
-      </body>
+      <ThemeProvider>
+        <body
+          className={`${inter.variable} ${montserrat.variable} antialiased bg-bgd-50 dark:bg-bgd-950`}
+        >
+          <BlurGradientBackground>
+            <Navbar />
+            {children}
+          </BlurGradientBackground>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
