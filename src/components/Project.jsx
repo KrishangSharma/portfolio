@@ -10,7 +10,9 @@ const Project = ({ stack, title, repo, live }) => {
           href={repo}
           target="_blank"
           rel="noreferrer noopener"
-          className="underline text-gray hover:text-accent transition "
+          className={` ${
+            repo === null ? "hidden" : " "
+          } underline text-gray hover:text-accent transition`}
         >
           Github
         </a>

@@ -2,19 +2,19 @@
   {
     "title": "Blog Application",
     "stack": "MERN Stack with React-Quill, Cloudinary and Tailwind CSS",
-    "repo": "https://github.com/KrishangSharma/blog-server",
+    "repo": null,
     "live": "https://krishangsharma-blogs.vercel.app/"
   },
   {
-    "title": "TypeScript Application",
-    "stack": "MERN Stack with Typescript and Tailwind CSS",
-    "repo": "https://github.com/KrishangSharma/typescript-mern-app",
-    "live": null
+    "title": "Phantom Click Website",
+    "stack": "ReactJS and TailwindCss",
+    "repo": null,
+    "live": "https://www.phantomclick.in/"
   },
   {
-    "title": "All Purpose Expense Tracker",
-    "stack": "MERN Stack with Session Based auth(work-in-progress)",
-    "repo": "https://github.com/KrishangSharma/moni-matter-server",
-    "live": null
+    "title": "FitStack",
+    "stack": "Full Stack Application  with NextJS, TailwindCSS, MongoDB",
+    "repo": null,
+    "live": "https://fitstack-client.vercel.app"
   }
 ]

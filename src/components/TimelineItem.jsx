@@ -9,7 +9,7 @@ const TimelineItem = ({ date, title, stack }) => {
         {title}
       </h2>
       <p className="text-text-300">
-        <b>Tech Stack: </b>
+        <b>Roles/Responsibilities </b>
         {stack}
       </p>
     </li>

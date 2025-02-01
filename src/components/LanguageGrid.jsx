@@ -18,7 +18,10 @@ const LanguageGrid = () => {
               JavaScript
             </p>
             <p className="p-2 bg-background-500/30 text-center rounded-md">
-              React JS
+              ReactJS
+            </p>
+            <p className="p-2 bg-background-500/30 text-center rounded-md">
+              NextJS
             </p>
           </div>
         </div>

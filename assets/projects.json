@@ -1,12 +1,12 @@
 [
   {
-    "date": "December'23 - January'24",
-    "title": "MERN Stack Blog Application",
-    "stack": "MongoDB, ExpressJS, NodeJS, React, React-Quill, Cloudinary"
+    "date": "August'24 - October'24",
+    "title": "Phantom Click",
+    "stack": "Full Stack Developer. Converted and maintained designs to working applications which served the client's need."
   },
   {
-    "date": "July'24 - In Development",
-    "title": "Full Stack Expense Tracker App",
-    "stack": "MERN Stack with Session based auth"
+    "date": "June'24 - September'24",
+    "title": "BCA Labs",
+    "stack": "Content Writer and Full Stack Developer. Wrote articles on various topics and migrated the codebase to TypeScript and worked closely in implementing new features."
   }
 ]
